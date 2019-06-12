@@ -1,0 +1,53 @@
+<h1>Semandec Cadastro</h1>
+<<<<<<< HEAD
+<form #fadd=ngForm>
+
+
+  <!-- <p>
+    <label for="">ID</label>
+    <input type="number" id="id" nome="id" [(ngModel)]="usuario.id">
+  </p> -->
+
+  <p>
+    <label for="" >Nome </label>
+    <input type="text" id="name" name="nome" [(ngModel)]="atleta.nome" text required>
+=======
+<form #fadd="ngForm">
+
+
+  <p>
+    <label for="">ID</label>
+    <input type="number" id="id" nome="id" [(ngModel)]="usuario.id">
+  </p>
+
+  <p>
+    <label for="">Nome </label>
+    <input type="text" id="name" name="nome" [(ngModel)]="usuario.nome">
+>>>>>>> 2b6c7f6ff7d0fcca03f688973b146741c84badc0
+  </p>
+
+  <p>
+    <label for="">Matricula</label>
+<<<<<<< HEAD
+    <input type="text" id="matricula" name="matricula" [(ngModel)]="atleta.matricula" required>
+  </p>
+  <p>
+    <label for="">Turma</label><br>
+    <input type="radio" name="equipe" value="Superior"  [(ngModel)]="atleta.equipe" required >Superior<br>
+    <input type="radio" name="equipe" value="Mecatronica"  [(ngModel)]="atleta.equipe" required>Mecatronica<br>
+    <input type="radio" name="equipe" value="Informatica"  [(ngModel)]="atleta.equipe" required>Informatica<br>
+    <input type="radio" name="equipe" value="Redes" [(ngModel)]="atleta.equipe" required>Redes<br>
+  </p>
+
+  <input type="submit" value="Cadastra" (click)="adicionar()" [disabled]="fadd.form.invalid">
+  <!-- <span class="erro" *ngIf="fadd == invalid">
+    Preencha todos os campos!!
+  </span> -->
+=======
+    <input type="text" id="matricula" name="matricula" [(ngModel)]="usuario.matricula">
+  </p>
+
+  <input type="submit" value="Cadastra" (click)="adicionar()">
+>>>>>>> 2b6c7f6ff7d0fcca03f688973b146741c84badc0
+
+</form>

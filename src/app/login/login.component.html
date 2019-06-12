@@ -1,0 +1,47 @@
+<<<<<<< HEAD
+<div class="content">
+  <div id="login">
+    <form #fm=ngForm>
+      <h1>Login</h1>
+      <p>
+        <label for="login">Matricula</label>
+        <input type="number" id="login" name="login" #no=ngModel [(ngModel)]="usuario.matricula" number required/>
+      </p>
+
+      <p>
+        <label for="senha">Sua senha</label>
+        <input type="password" id="senha" name="senha" #no=ngModel [(ngModel)]="usuario.senha" text required/>
+      </p>
+
+      <p>
+        <input type="submit" value="Logar" (click)="login()" [disabled]="fm.form.invalid"/>
+      </p>
+
+      <p class="link">
+        Ainda não tem conta?
+        <a href="/cadastro">Cadastre-se</a>
+      </p>
+    </form>
+  </div>
+=======
+<form>
+  <h1>Semadec Manager</h1>
+  <p>
+    <label for="nome_login" #user>Matricula</label>
+    <input type="text">
+  </p>
+
+  <p>
+    <label for="login_senha" #user>Senha</label>
+    <input type="password">
+  </p>
+
+  <p>
+    <input type="submit" value="Logar" (click)="loginUser()">
+  </p>
+
+  <p>
+    <input type="submit" value="Cadastra" (click)="cadastrarUser()">
+  </p>
+</form>
+>>>>>>> 2b6c7f6ff7d0fcca03f688973b146741c84badc0

@@ -1,0 +1,33 @@
+<div>
+  <div id="cadastro">
+    <form #fm=ngForm>
+      <h1>Cadastro</h1>
+
+      <p>
+        <label for="nome">Seu nome</label>
+        <input type="text" id="nome" name="nome" #no=ngModel [(ngModel)]="usuario.nome" text required  />
+      </p>
+
+      <p>
+        <label for="matricula">Sua Matricula</label>
+        <input 
+        type="number" id="matricula" name="matricula" #ma=ngModel [(ngModel)]="usuario.matricula" number required/>
+      </p>
+
+      <p>
+        <label for="senha">Sua senha</label>
+        <input 
+        type="password" id="senha" name="senha" #se=ngModel [(ngModel)]="usuario.senha" text required>
+      </p>
+
+      <p>
+        <input type="submit" value="Cadastrar" [disabled]="fm.form.invalid" (click)="cadastrar()"/>
+      </p>
+
+      <p class="link">
+        Já tem conta?
+        <a href="/login"> Ir para Login </a>
+      </p>
+    </form>
+  </div>
+</div>
